@@ -1,0 +1,19 @@
+@import url("styles/header.css");
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular') format('truetype');
+}
+
+:root {
+    --cor-fundo-header: #dddbd9;
+    --cor-fundo-sessao: #e5e5e5;
+    --branco: #FFFFFF;
+    --cor-fonte: #332e29;
+    --preto: #000000;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+}

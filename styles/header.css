@@ -1,0 +1,18 @@
+.cabecalho__menu-hamburguer{
+    min-width: 1em;
+    width: auto;
+    height: 1em;
+    background-image: url("../assets/sessao1/bars.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho{
+    background-color: var(--cor-fundo-header);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
