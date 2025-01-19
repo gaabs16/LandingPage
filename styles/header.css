@@ -1,18 +1,43 @@
-.cabecalho__menu-hamburguer{
-    min-width: 1em;
-    width: auto;
-    height: 1em;
-    background-image: url("../assets/sessao1/bars.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
+.container__titulo{
+    text-decoration: none;
+    color: var(--cor-fonte);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .cabecalho{
     background-color: var(--cor-fundo-header);
 }
 
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/sessao1/bars.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
 .container{
     display: flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.lista-menu{
+    position: relative;
+    background-color: var(--preto);
+}
+
+.lista-menu__link{
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.lista-menu__titulo{
+    color: var(--branco);
+    margin-left: 80%;
 }

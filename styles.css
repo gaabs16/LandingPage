@@ -1,8 +1,8 @@
 @import url("styles/header.css");
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Regular') format('truetype');
+    font-family: 'Open Sans, Roboto';
+    src: url('./fonts/Open_Sans');
 }
 
 :root {
@@ -12,6 +12,7 @@
     --cor-fonte: #332e29;
     --preto: #000000;
     --fonte-principal: 'Roboto', sans-serif;
+    --fonte-secundaria: 'Open Sans', sans-serif;
 }
 
 body {
