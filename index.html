@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Design</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
 </head>
@@ -21,6 +21,11 @@
                     .then(response => response.text())
                     .then(content => {
                         elemento.innerHTML = content;
+                        let styles = document.querySelectorAll("link[rel='stylesheet']");
+                        styles.forEach(style => {
+                            let href = style.getAttribute("href");
+                            style.setAttribute("href", href + "?v=" + new Date().getTime());
+                        });
                     })
                     .catch(error => console.error("Erro ao carregar seção:", error));
             });

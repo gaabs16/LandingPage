@@ -21,23 +21,44 @@
 
 .container{
     display: flex;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    height: 100px;
 }
 
 .lista-menu{
-    position: relative;
-    background-color: var(--preto);
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 20%;
+    right: 80%;
+    z-index: 999;
 }
 
-.lista-menu__link{
-    color: var(--branco);
-    text-decoration: none;
+.container__botao:checked ~.lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item{
+    background-color: var(--preto);
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
 }
 
 .lista-menu__titulo{
+    justify-content: end;
+}
+
+.lista-menu__link,
+.lista-menu__titulo{
     color: var(--branco);
-    margin-left: 80%;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.container__botao{
+    display: none;
 }
