@@ -1,9 +1,10 @@
 @import url("styles/header.css");
 @import url("styles/sessao1.css");
+@import url("styles/sessao2.css");
 
 @font-face {
-    font-family: 'Open Sans, Roboto';
-    src: url('./fonts/Open_Sans');
+    font-family: 'Open Sans, Oswald';
+    src: url('./fonts/Open_Sans/Oswald/');
 }
 
 :root {
@@ -12,10 +13,12 @@
     --branco: #FFFFFF;
     --cor-fonte: #332e29;
     --preto: #000000;
-    --fonte-principal: 'Roboto', sans-serif;
+    --fonte-principal: 'Oswald', sans-serif;
     --fonte-secundaria: 'Open Sans', sans-serif;
 }
 
 body {
     font-family: var(--fonte-principal);
+    width: 100%;
+    overflow-x: hidden;
 }

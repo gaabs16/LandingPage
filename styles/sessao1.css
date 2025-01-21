@@ -1,36 +1,111 @@
-.primeiraSessao{
+.primeiraSessao {
     background-color: var(--cor-fundo-sessao);
     width: 100%;
-    height: 1083px;
-    position: relative;
+    min-height: 1000px;
+    display: flex;
+    align-items: center;
 }
 
-.conteudo__primeiraSessao{
+.conteudo__primeiraSessaoTitulo {
     background-color: var(--branco);
-    width: 303px;
-    height: 808px;
-    position: absolute;
-    right: 120px;
-    top: 8%;
+    transform: translate(20%, 50%);
     z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
 }
 
-.conteudo__primeiraSessaoImagem{
-    background-color: red;
-    width: 986px;
-    height: 623px;
-    position: absolute;
+.primeiraSessao__conteudoImagens {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo__primeiraSessaoImagem {
+    width: 900px;
+    height: 500px;
+    transform: translate(-20%, 10%);
+    background-image: url("../assets/sessao1/sala.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 2;
-    right: 100px;
-    top: 10%;
 }
 
-.conteudo__primeiraSessaoTitulo{
-    background-color: var(--preto);
-    padding: 30px 39px;
-    position: absolute;
-    z-index: 4;
-    transform: translate(-230%, 150%);
+.conteudo__primeiraSessao__lateral {
     width: 300px;
-    height: 300px;
+    height: 680px;
+    background-color: var(--branco);
+    transform: translate(-100%, -5%);
+    z-index: 1;
+}
+
+.primeiraSessao__subtitulo {
+    font-size: 30px;
+    color: var(--cor-fonte);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: var(--fonte-principal);
+}
+
+.primeiraSessao__titulo {
+    width: 500px;
+    height: 250px;
+    font-size: 3.75rem;
+    margin: 30px 0;
+    font-weight: 700;
+    color: var(--cor-fonte);
+    line-height: 1.1;
+    font-family: var(--fonte-principal);
+}
+
+.primeiraSessao__link {
+    color: var(--cor-fonte);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+}
+
+.primeiraSessao__link a {
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    .primeiraSessao {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .primeiraSessao__conteudoImagens {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        background-color: red;
+        transform: translate(0%, -10%);
+    }
+
+    .conteudo__primeiraSessaoImagem {
+        width: 50%;
+        height: 50%;
+        transform: translate(0%, -30%);
+    }
+
+    .conteudo__primeiraSessao__lateral {
+        width: 80%;
+        height: 80%;
+        transform: translate(0%, -10%);
+    }
+    
+    .primeiraSessao__titulo {
+        font-size: 1.5rem;
+        width: 50%;
+        background-color: brown;
+    }
+
+    .primeiraSessao__subtitulo {
+        font-size: 1.5rem;
+    }
+
+    .primeiraSessao__link {
+        font-size: 1rem;
+    }
 }
