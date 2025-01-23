@@ -1,0 +1,47 @@
+.quartaSessao{
+    width: 100%;
+    background-color: var(--cor-fundo-sessao);
+}
+
+.quartaSessao__conteudo{
+    height: 520px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quartaSessao__Imagem{
+    height: 390px;
+    display: flex;
+    align-items: end;
+    background-color: red;
+}
+
+.quartaSessao__Imagem img{
+    width: 450px;
+    height: 480px;
+}
+
+.quartaSessao__ConteudoTitulo{
+    width: 480px;
+    height: 380px;
+    border: 15px solid transparent;
+    padding: 30px 10px;
+}
+
+.quartaSessao__Titulo{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--fonte-principal);
+    margin-bottom: 30px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+
+.quartaSessao__Subtitulo{
+    font-size: 1.5rem;
+    margin: 20px 0 0;
+    line-height: 1.5;
+    font-family: var(--fonte-secundaria);
+}

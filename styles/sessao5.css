@@ -1,0 +1,61 @@
+.quintaSessao{
+    background-color: var(--cor-fundo-sessao);
+    width: 100%;
+}
+
+.quintaSessao__conteudo{
+    height: 525px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.quintaSessao__ConteudoTitulo{
+    width: 900px;
+    height: 425px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.quintaSessao__Titulo{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+}
+
+.quintaSessao__linha{
+    width: 20%;
+    border-color: var(--preto);
+}
+
+.quintaSessao__Subtitulo{
+    font-size: 1.5rem;
+    margin: 30px 20px;
+    line-height: 1.5;
+    font-family: var(--fonte-secundaria);
+}
+
+.quintaSessao__botao{
+    background-color: var(--brancp);
+    color: var(--preto);
+    border: 1px solid var(--preto);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.quintaSessao__botao:hover{
+    background-color: var(--preto);
+    color: var(--branco);
+}

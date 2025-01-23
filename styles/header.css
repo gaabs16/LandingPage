@@ -34,7 +34,7 @@
     top: 100%;
     width: 20%;
     right: 80%;
-    z-index: 999;
+    z-index: 10;
 }
 
 .container__botao:checked ~.lista-menu{
@@ -56,6 +56,8 @@
 .lista-menu__link,
 .lista-menu__titulo{
     color: var(--branco);
+    font-family: var(--fonte-secundaria);
+    font-family: 1.5rem;
     text-decoration: none;
     font-weight: 700;
 }
