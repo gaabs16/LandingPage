@@ -1,0 +1,39 @@
+.oitavaSessao{
+    background-color: var(--branco);
+    width: 100%;
+}
+
+.oitavaSessao__conteudo{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 120px;
+}
+
+.oitavaSessao__Imagens{
+    width: 796px;
+    height: 393px;
+    position: relative;
+    display: flex;
+}
+
+.oitavaSessao__PrimeiraImagem, 
+.oitavaSessao__SegundaImagem{
+    position: relative;
+    z-index: 1;
+    border: 10px solid transparent;
+}
+
+.oitavaSessao__PrimeiraImagem img, .oitavaSessao__SegundaImagem img{
+    width: 450px;
+    height: 450px;
+}
+
+.oitavaSessao__FundoImagem{
+    width: 700px;
+    height: 350px;
+    background-color: var(--cor-fundo-sessao);
+    margin: 160px 0px 0px 300px;
+    position: absolute;
+}

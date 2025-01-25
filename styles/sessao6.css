@@ -4,8 +4,7 @@
 }
 
 .sextaSessao__conteudo{
-    background-color: red;
-    height: 741px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,24 +23,29 @@
 }
 
 .sextaSessao__conteudoSecundario{
-    background-color: blueviolet;
-    padding: 20px 40px;
+    background-color: var(--branco);
+    padding: 10px 30px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
-.sextaSessao__PrimeiroTitulo{
-    font-size: 48px;
+.sextaSessao__PrimeiroTitulo, .sextaSessao__SegundoTitulo{
+    font-size: 30px;
     font-weight: 700;
     font-family: var(--fonte-principal);
-    background-color: aqua;
     margin-bottom: 10px;
 }
 
-.sextaSessao__PrimeiroSubtitulo{
-    font-size: 1.5rem;
+.sextaSessao__PrimeiroSubtitulo, .sextaSessao__SegundoSubtitulo{
+    font-size: 1.3rem;
     line-height: 1.5;
     text-align: end;
-    background-color:chartreuse;
+    font-family: var(--fonte-secundaria);
+}
+
+.sextaSessao__SegundoSubtitulo{
+    text-align: start;
 }
 
 .sextaSessao__Texto{
@@ -50,7 +54,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background-color: blue;
 }
 
 .sextaSessao__Texto img, .sextaSessao__conteudoSecundarioTexto img{
@@ -64,5 +67,4 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-color: brown;
 }

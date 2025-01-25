@@ -1,46 +1,36 @@
-.quintaSessao{
+.setimaSessao{
     background-color: var(--cor-fundo-sessao);
     width: 100%;
 }
 
-.quintaSessao__conteudo{
-    height: 525px;
-    display: flex;   
+.setimaSessao__conteudo{
+    height: 246px;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding: 30px 30px 30px 0;
+}
+
+.setimaSessao__ConteudoTitulo{
+    width: 766px;
+    height: 365px;
+    display: flex;
     flex-direction: column;
 }
 
-.quintaSessao__ConteudoTitulo{
-    width: 900px;
-    height: 425px;
-    display: flex;   
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.quintaSessao__Titulo{
+.setimaSessao__Titulo{
     font-size: 48px;
     font-weight: 700;
     font-family: var(--fonte-principal);
 }
 
-.quintaSessao__linha{
-    width: 20%;
-    border-color: var(--preto);
-}
-
-.quintaSessao__Subtitulo{
+.setimaSessao__Subtitulo{
     font-size: 1.5rem;
-    margin: 30px 20px;
-    line-height: 1.5;
+    line-height: 1.6;
     font-family: var(--fonte-secundaria);
+    padding: 50px 0px;
 }
 
-.quintaSessao__botao{
+.setimaSessao__botao{
     background-color: var(--brancp);
     color: var(--preto);
     border: 1px solid var(--preto);
@@ -55,7 +45,7 @@
     letter-spacing: 3px;
 }
 
-.quintaSessao__botao:hover{
+.setimaSessao__botao:hover{
     background-color: var(--preto);
     color: var(--branco);
 }

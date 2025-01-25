@@ -1,0 +1,73 @@
+.nonaSessao {
+    background-color: var(--cor-fundo-sessao);
+    width: 100%;
+}
+
+.nonaSessao__conteudo {
+    background-color: red;
+    height: 1498px;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.nonaSessao__alinhamento {
+    width: 667px;
+    height: 748px;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+}
+
+.nonaSessao__ConteudoTitulo {
+    width: 629px;
+    padding: 20px 45px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    background-color: blue;
+}
+
+.nonaSessao__Titulo {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+}
+
+.nonaSessao__link,
+.nonaSessao__Subtitulo {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: var(--fonte-secundaria);
+    padding: 20px 0px;
+}
+
+.nonaSessao__link a {
+    color: inherit;
+}
+
+.nonaSessao__botao {
+    background-color: var(--brancp);
+    color: var(--preto);
+    border: 1px solid var(--preto);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.nonaSessao__botao:hover{
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.nonaSessao__PrimeiraImagem{
+    width: 377px;
+    height: 429px;
+}
