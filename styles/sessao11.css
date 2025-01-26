@@ -1,0 +1,128 @@
+.decimaPrimeiraSessao{
+    width: 100%;
+}
+
+.decimaPrimeiraSessao__conteudo{
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.decimaPrimeiraSessao__Container{
+    width: 1153px;
+    height: auto;
+    display: flex;
+    padding: 60px 0;
+}
+
+.decimaPrimeiraSessao__primeiraColuna{
+    width: 488px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.decimaPrimeiraSessao__Titulo{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+}
+
+.decimaPrimeiraSessao__primeiraColunaTitulo{
+    max-width: 596px;
+    display: flex;
+    flex-direction: column;
+}
+
+.decimaPrimeiraSessao__ConteudoTitulo{
+    height: 262px;
+    display: flex;
+    flex-direction: column;
+}
+
+.decimaPrimeiraSessao__Subtitulo{
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    line-height: 2.2;
+    margin: 20px 0 0;
+}
+
+.formulario{
+    height: 303px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 484px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    background-color: var(--cor-fundo-sessao);
+    border: 0;
+    height: 45px;
+}
+
+textarea{
+    height: 74px;
+}
+
+.enviar{
+    background-color: var(--preto);
+    color: var(--branco);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.decimaPrimeiraSessao__segundaColuna{
+    width: 700px;
+    height: 859px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.decimaPrimeiraSessao__topo{
+    width: 100%;
+    height: 285px;
+}
+
+.decimaPrimeiraSessao__primeiroQuadrado{
+    width: 1000px;
+    height: 285px;
+    background-color: var(--cor-fundo-sessao);
+}
+
+.decimaPrimeiraSessao__lateralDireita{
+    width: 410px;
+    height: 535px;
+}
+
+.decimaPrimeiraSessao__segundoQuadrado{
+    width: 380px;
+    height: 550px;
+    background-color: #d9d9d9;
+}
+
+.mapBox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.mapBox iframe{
+    width: 540px;
+    height: 711px;
+    transform: translate(10%, 15%);
+}

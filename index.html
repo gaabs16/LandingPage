@@ -20,6 +20,9 @@
     <section id="sessao7" data-src="src/sessao7.html"></section>
     <section id="sessao8" data-src="src/sessao8.html"></section>
     <section id="sessao9" data-src="src/sessao9.html"></section>
+    <section id="sessao10" data-src="src/sessao10.html"></section>
+    <section id="sessao11" data-src="src/sessao11.html"></section>
+    <section id="sessao12" data-src="src/footer.html"></section>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -38,6 +41,15 @@
                     .catch(error => console.error("Erro ao carregar seção:", error));
             });
         });
+    </script>
+
+    <script>
+        function Enviar() {
+            var nome = document.getElementById("nomeid");
+            if (nome.value != "") {
+                alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+            }
+        }
     </script>
 </body>
 

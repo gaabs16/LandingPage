@@ -8,6 +8,9 @@
 @import url("styles/sessao7.css");
 @import url("styles/sessao8.css");
 @import url("styles/sessao9.css");
+@import url("styles/sessao10.css");
+@import url("styles/sessao11.css");
+@import url("styles/footer.css");
 
 @font-face {
     font-family: 'Open Sans, Oswald';
@@ -22,10 +25,12 @@
     --preto: #000000;
     --fonte-principal: 'Oswald', sans-serif;
     --fonte-secundaria: 'Open Sans', sans-serif;
+    --cor-footer: #333333;
 }
 
 body {
     font-family: var(--fonte-principal);
     width: 100%;
     overflow-x: hidden;
+    box-sizing: border-box;
 }

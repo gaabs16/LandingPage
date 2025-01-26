@@ -4,11 +4,8 @@
 }
 
 .nonaSessao__conteudo {
-    height: auto;
-    padding: 60px 0px;
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
 .nonaSessao__alinhamento {
@@ -17,6 +14,7 @@
     position: relative;
     justify-content: space-evenly;
     flex-direction: column;
+    justify-content: center;
 }
 
 .nonaSessao__primeiraColunaContainer{
@@ -29,15 +27,15 @@
 
 .nonaSessao__primeiraColunaAlinhamento{
     width: 400px;
-    height: 775px;
+    height: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .nonaSessao__primeiraAlinhamento{
     width: 699px;
-    height: 775px;
     display: flex;
     align-items: end;
     justify-content: end;
@@ -62,6 +60,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .nonaSessao__segundaColuna{
@@ -84,7 +83,7 @@
 
 .nonaSessao__borda{
     width: 522px;
-    height: 240px;
+    height: 220px;
     border-left: 10px solid #666666;
 }
 
