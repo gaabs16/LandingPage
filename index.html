@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
 </head>
-
 <body>
     <header id="home" data-src="src/header.html"></header>
     <section id="sessao1" data-src="src/sessao1.html"></section>
@@ -23,25 +21,6 @@
     <section id="sessao10" data-src="src/sessao10.html"></section>
     <section id="sessao11" data-src="src/sessao11.html"></section>
     <section id="sessao12" data-src="src/footer.html"></section>
-
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll("[data-src]").forEach(elemento => {
-                let arquivo = elemento.getAttribute("data-src");
-                fetch(arquivo)
-                    .then(response => response.text())
-                    .then(content => {
-                        elemento.innerHTML = content;
-                        let styles = document.querySelectorAll("link[rel='stylesheet']");
-                        styles.forEach(style => {
-                            let href = style.getAttribute("href");
-                            style.setAttribute("href", href + "?v=" + new Date().getTime());
-                        });
-                    })
-                    .catch(error => console.error("Erro ao carregar seção:", error));
-            });
-        });
-    </script> -->
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -78,8 +57,7 @@
         });
 
     </script>
-
-
+    
     <script>
         function Enviar() {
             var nome = document.getElementById("nomeid");
@@ -89,5 +67,4 @@
         }
     </script>
 </body>
-
 </html>
