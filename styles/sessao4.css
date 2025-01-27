@@ -38,7 +38,6 @@
     text-transform: uppercase;
 }
 
-
 .quartaSessao__Subtitulo{
     font-size: 1.5rem;
     margin: 20px 0 0;
@@ -46,8 +45,7 @@
     font-family: var(--fonte-secundaria);
 }
 
-
-@keyframes rotateFrom180to90 {
+@keyframes rotateFrom {
     from {
         opacity: 0;
         transform: rotate(180deg);
@@ -75,10 +73,10 @@
     will-change: transform, opacity;
 }
 
-.quartaSessao__ConteudoTitulo.animated {
-    animation: rotateFrom180to90 1.5s ease-out forwards;
+.quartaSessao__ConteudoTitulo.animate {
+    animation: rotateFrom 1.5s ease-out forwards;
 }
 
-.quartaSessao__Imagem.animated {
+.quartaSessao__Imagem.animate {
     animation: slideUp 1.5s ease-out forwards;
 }

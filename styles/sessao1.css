@@ -9,7 +9,8 @@
 
 .conteudo__primeiraSessaoTitulo {
     background-color: var(--branco);
-    transform: translate(20%, 20%);
+    transform: translate(50%, 50%);
+    position: relative;
     z-index: 3;
     display: flex;
     flex-direction: column;
@@ -24,8 +25,8 @@
 
 .conteudo__primeiraSessaoImagem {
     width: 900px;
-    height: 500px;
-    transform: translate(-20%, 10%);
+    height: 550px;
+    transform: translate(-10%, 10%);
     background-image: url("../assets/sessao1/sala.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -34,10 +35,11 @@
 
 .conteudo__primeiraSessao__lateral {
     width: 300px;
-    height: 680px;
+    height: 700px;
     background-color: var(--branco);
     transform: translate(-100%, -5%);
     z-index: 1;
+    opacity: 0;
 }
 
 .primeiraSessao__subtitulo {
@@ -69,51 +71,35 @@
     color: inherit;
 }
 
-
-
-@keyframes rotateIn {
+/* @keyframes slideUp {
     from {
         opacity: 0;
-        transform: rotate(-180deg);
+        transform: translate(200%, 100%);
     }
     to {
         opacity: 1;
-        transform: rotate(0);
+        transform: translate(100%, 50%);
     }
-}
+} */
 
-
-@keyframes slideUp {
+@keyframes slideRight {
     from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateX(200%);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(-100%);
     }
 }
 
-.animated {
-    opacity: 1;
-    transition: opacity 0.5s ease-out, transform 1s ease-out;
-    will-change: transform, opacity;
-}
+/* .conteudo__primeiraSessaoTitulo.animate {
+    animation: slideUp 1.5s ease-out forwards;
+} */
 
-.conteudo__primeiraSessao__lateral:has(+ .animated),
-.conteudo__primeiraSessaoTitulo:has(+ .animated) {
-    opacity: 1;
-    animation-fill-mode: forwards;
+.conteudo__primeiraSessao__lateral.animate {
+    animation: slideRight 1.5s ease-out forwards;
 }
-
-.conteudo__primeiraSessao__lateral.animated {
-    animation: rotateIn 1.5s ease-out;
-}
-
-.conteudo__primeiraSessaoTitulo.animated {
-    animation: slideUp 1.5s ease-out;
-}
-
 
 @media (max-width: 600px) {
     .primeiraSessao {

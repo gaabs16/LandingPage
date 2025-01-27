@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: slideUp 2.5s ease-out;
+    /* animation: slideUp 2.5s ease-out; */
 }
 
 .decimaPrimeiraSessao__Titulo {
@@ -103,7 +103,7 @@ textarea {
     width: 1000px;
     height: 285px;
     background-color: var(--cor-fundo-sessao);
-    animation: slideLeftToRight 2.5s ease-out;
+    /* animation: slideLeftToRight 2.5s ease-out; */
 }
 
 .decimaPrimeiraSessao__lateralDireita {
@@ -115,7 +115,7 @@ textarea {
     width: 400px;
     height: 550px;
     background-color: #d9d9d9;
-    animation: slideDown 2.5s ease-out;
+    /* animation: slideDown 2.5s ease-out; */
 }
 
 .mapBox {
@@ -123,7 +123,7 @@ textarea {
     width: 100%;
     height: 100%;
     z-index: 1;
-    animation: slideLeftToRight 2.5s ease-out;
+    /* animation: slideLeftToRight 2.5s ease-out; */
 }
 
 .mapBox iframe {
@@ -132,38 +132,39 @@ textarea {
     transform: translate(10%, 15%);
 }
 
-@keyframes slideUp {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.animateOnScroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
 }
 
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.animateOnScroll.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-@keyframes slideLeftToRight {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
+.decimaPrimeiraSessao__primeiraColuna.animateOnScroll {
+    transform: translateY(50px);
+}
 
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.decimaPrimeiraSessao__primeiraColuna.animate {
+    transform: translateY(0);
+}
+
+.decimaPrimeiraSessao__segundoQuadrado.animateOnScroll {
+    transform: translateY(-50px);
+}
+
+.decimaPrimeiraSessao__segundoQuadrado.animate {
+    transform: translateY(0);
+}
+
+.decimaPrimeiraSessao__primeiroQuadrado.animateOnScroll,
+.mapBox.animateOnScroll {
+    transform: translateX(-50px);
+}
+
+.decimaPrimeiraSessao__primeiroQuadrado.animate,
+.mapBox.animate {
+    transform: translateX(0);
 }

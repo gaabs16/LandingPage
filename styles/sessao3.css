@@ -90,15 +90,14 @@
     will-change: transform, opacity;
 }
 
-.terceiraSessao__ConteudoTitulo.animated {
+.terceiraSessao__ConteudoTitulo.animate {
     animation: rotateUp 1.5s ease-out forwards;
 }
 
-.terceiraSessao__PrimeiraImagem.animated {
+.terceiraSessao__PrimeiraImagem.animate {
     animation: slideDown 1.5s ease-out forwards;
 }
 
-
-.terceiraSessao__SegundaImagem.animated {
+.terceiraSessao__SegundaImagem.animate {
     animation: pulse 1.5s ease-out forwards;
 }

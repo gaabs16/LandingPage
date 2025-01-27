@@ -10,7 +10,8 @@
     padding: 20px;
 }
 
-.segundaSessao__ConteudoTitulo, .segundaSessao__link{
+.segundaSessao__ConteudoTitulo, 
+.segundaSessao__link{
     width: 42%;
     height: 300px;
     padding: 20px;
@@ -18,6 +19,11 @@
     justify-content: flex-end;
     align-items: start;
     flex-direction: column;
+
+    opacity: 0;
+    transform: translateY(0); /* Manter o padrão de transform */
+    will-change: transform, opacity;
+    position: relative;
 }
 
 .segundaSessao__Titulo{
@@ -82,25 +88,18 @@
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateX(100%);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
-.segundaSessao__ConteudoTitulo,
-.segundaSessao__link {
-    opacity: 0;
-    transform: translateY(0);
-    will-change: transform, opacity;
-}
-
-.segundaSessao__ConteudoTitulo.animated {
+.segundaSessao__ConteudoTitulo.animate {
     animation: slideDown 1.5s ease-out forwards;
 }
 
-.segundaSessao__link.animated {
+.segundaSessao__link.animate {
     animation: slideUp 1.5s ease-out forwards;
 }

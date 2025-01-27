@@ -66,48 +66,54 @@
     border: 15px solid transparent;
 }
 
-@keyframes zoomIn {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+/* Define os elementos invisíveis antes da animação */
+.animateOnScroll {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-out;
 }
 
-@keyframes slideLeftToRight {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+/* Quando a classe "animate" for adicionada, os elementos aparecem */
+.animateOnScroll.animate {
+    opacity: 1;
+    transform: scale(1);
 }
 
-@keyframes slideRightToLeft {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+/* Animação do título */
+.decimaSessao__ConteudoTitulo {
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 1s ease-out;
 }
 
+.decimaSessao__ConteudoTitulo.animate {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Animação das imagens */
 .decimaSessao__primeiraImagem,
 .decimaSessao__segundaImagem {
-    animation: slideLeftToRight 2s ease-out;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1.5s ease-out;
+}
+
+.decimaSessao__primeiraImagem.animate,
+.decimaSessao__segundaImagem.animate {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .decimaSessao__terceiraImagem,
 .decimaSessao__quartaImagem {
-    animation: slideRightToLeft 2s ease-out;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1.5s ease-out;
+}
+
+.decimaSessao__terceiraImagem.animate,
+.decimaSessao__quartaImagem.animate {
+    transform: translateX(0);
+    opacity: 1;
 }

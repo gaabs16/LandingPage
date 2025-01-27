@@ -24,7 +24,7 @@
     <section id="sessao11" data-src="src/sessao11.html"></section>
     <section id="sessao12" data-src="src/footer.html"></section>
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll("[data-src]").forEach(elemento => {
                 let arquivo = elemento.getAttribute("data-src");
@@ -41,7 +41,44 @@
                     .catch(error => console.error("Erro ao carregar seção:", error));
             });
         });
+    </script> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function animateOnScroll() {
+                const elements = document.querySelectorAll(".animateOnScroll");
+
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementBottom = element.getBoundingClientRect().bottom;
+                    const windowHeight = window.innerHeight;
+
+                    if (elementTop < windowHeight * 0.8 && elementBottom > 0) {
+                        element.classList.add("animate");
+                    } else {
+                        element.classList.remove("animate");
+                    }
+                });
+            }
+
+            function loadSections() {
+                document.querySelectorAll("[data-src]").forEach(elemento => {
+                    let arquivo = elemento.getAttribute("data-src");
+                    fetch(arquivo)
+                        .then(response => response.text())
+                        .then(content => {
+                            elemento.innerHTML = content;
+                            setTimeout(() => animateOnScroll(), 100);
+                        })
+                        .catch(error => console.error("Erro ao carregar seção:", error));
+                });
+            }
+            loadSections();
+            window.addEventListener("scroll", animateOnScroll);
+        });
+
     </script>
+
 
     <script>
         function Enviar() {

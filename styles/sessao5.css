@@ -20,6 +20,10 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
+
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
 .quintaSessao__Titulo{
@@ -55,19 +59,10 @@
     letter-spacing: 3px;
 }
 
-.quintaSessao__botao:hover{
-    background-color: var(--preto);
-    color: var(--branco);
-}
-
-@keyframes pulse {
+@keyframes scaleUp {
     0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.1);
-        opacity: 0.8;
+        transform: scale(0.5);
+        opacity: 0;
     }
     100% {
         transform: scale(1);
@@ -75,10 +70,6 @@
     }
 }
 
-.quintaSessao__ConteudoTitulo.animated {
-    animation: pulse 1.5s ease-out forwards;
-}
-
-.quintaSessao__botao.animated {
-    animation: pulse 1.5s ease-out forwards;
+.quintaSessao__ConteudoTitulo.animate {
+    animation: scaleUp 1.5s ease-out forwards;
 }
