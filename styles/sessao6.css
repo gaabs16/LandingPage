@@ -68,3 +68,49 @@
     flex-direction: column;
     justify-content: start;
 }
+
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sextaSessao__Imagem.animated {
+    animation: slideFromLeft 1.5s ease-out forwards;
+}
+
+.sextaSessao__Texto.animated {
+    animation: slideFromTop 1.5s ease-out forwards;
+}
+
+.sextaSessao__conteudoSecundarioTexto.animated {
+    animation: slideFromBottom 1.5s ease-out forwards;
+}

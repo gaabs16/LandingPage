@@ -45,3 +45,40 @@
     line-height: 1.5;
     font-family: var(--fonte-secundaria);
 }
+
+
+@keyframes rotateFrom180to90 {
+    from {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quartaSessao__ConteudoTitulo,
+.quartaSessao__Imagem {
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.quartaSessao__ConteudoTitulo.animated {
+    animation: rotateFrom180to90 1.5s ease-out forwards;
+}
+
+.quartaSessao__Imagem.animated {
+    animation: slideUp 1.5s ease-out forwards;
+}

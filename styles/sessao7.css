@@ -49,3 +49,18 @@
     background-color: var(--preto);
     color: var(--branco);
 }
+
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.setimaSessao.animated {
+    animation: slideFromTop 1.5s ease-out forwards;
+}

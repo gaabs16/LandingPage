@@ -68,3 +68,39 @@
     color: var(--preto);
 }
 
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.segundaSessao__ConteudoTitulo,
+.segundaSessao__link {
+    opacity: 0;
+    transform: translateY(0);
+    will-change: transform, opacity;
+}
+
+.segundaSessao__ConteudoTitulo.animated {
+    animation: slideDown 1.5s ease-out forwards;
+}
+
+.segundaSessao__link.animated {
+    animation: slideUp 1.5s ease-out forwards;
+}

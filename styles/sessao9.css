@@ -6,6 +6,7 @@
 .nonaSessao__conteudo {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .nonaSessao__alinhamento {
@@ -121,6 +122,7 @@
     flex-direction: column;
     position: absolute;
     transform: translate(30%, 30%);
+    z-index: 1;
     background-color: var(--branco);
 }
 
@@ -160,4 +162,80 @@
 .nonaSessao__botao:hover{
     background-color: var(--preto);
     color: var(--branco);
+}
+
+
+/* @keyframes rotateTitle {
+    0% {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.nonaSessao__ConteudoTitulo.animated {
+    animation: rotateTitle 1.5s ease-out forwards;
+} */
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.nonaSessao__PrimeiraImagem.animated {
+    animation: slideFromLeft 1.5s ease-out forwards;
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.nonaSessao__primeiraAlinhamento.animated {
+    animation: slideFromRight 1.5s ease-out forwards;
+}
+
+@keyframes slideFromRight2 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.nonaSessao__QuartaImagem.animated {
+    animation: slideFromRight2 1.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.nonaSessao__ConteudoSubtitulo.animated {
+    animation: slideUp 1.5s ease-out forwards;
 }

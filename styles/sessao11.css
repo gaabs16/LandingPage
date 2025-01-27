@@ -1,79 +1,81 @@
-.decimaPrimeiraSessao{
+.decimaPrimeiraSessao {
     width: 100%;
 }
 
-.decimaPrimeiraSessao__conteudo{
+.decimaPrimeiraSessao__conteudo {
     height: auto;
     display: flex;
     justify-content: center;
 }
 
-.decimaPrimeiraSessao__Container{
+.decimaPrimeiraSessao__Container {
     width: 1153px;
     height: auto;
     display: flex;
     padding: 60px 0;
 }
 
-.decimaPrimeiraSessao__primeiraColuna{
+.decimaPrimeiraSessao__primeiraColuna {
     width: 488px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: slideUp 2.5s ease-out;
 }
 
-.decimaPrimeiraSessao__Titulo{
+.decimaPrimeiraSessao__Titulo {
     font-size: 40px;
     font-weight: 700;
     font-family: var(--fonte-principal);
 }
 
-.decimaPrimeiraSessao__primeiraColunaTitulo{
+.decimaPrimeiraSessao__primeiraColunaTitulo {
     max-width: 596px;
     display: flex;
     flex-direction: column;
 }
 
-.decimaPrimeiraSessao__ConteudoTitulo{
+.decimaPrimeiraSessao__ConteudoTitulo {
     height: 262px;
     display: flex;
     flex-direction: column;
 }
 
-.decimaPrimeiraSessao__Subtitulo{
+.decimaPrimeiraSessao__Subtitulo {
     font-size: 1rem;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
     line-height: 2.2;
-    margin: 20px 0 0;
+    margin: 20px 0px 0px;
 }
 
-.formulario{
+.formulario {
     height: 303px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-form{
+form {
     width: 484px;
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-input, textarea{
+input,
+textarea {
     margin-bottom: 20px;
     background-color: var(--cor-fundo-sessao);
     border: 0;
     height: 45px;
 }
 
-textarea{
+textarea {
     height: 74px;
 }
 
-.enviar{
+.enviar {
     background-color: var(--preto);
     color: var(--branco);
     cursor: pointer;
@@ -82,7 +84,7 @@ textarea{
     letter-spacing: 1px;
 }
 
-.decimaPrimeiraSessao__segundaColuna{
+.decimaPrimeiraSessao__segundaColuna {
     width: 700px;
     height: 859px;
     position: relative;
@@ -92,37 +94,76 @@ textarea{
     justify-content: space-between;
 }
 
-.decimaPrimeiraSessao__topo{
+.decimaPrimeiraSessao__topo {
     width: 100%;
     height: 285px;
 }
 
-.decimaPrimeiraSessao__primeiroQuadrado{
+.decimaPrimeiraSessao__primeiroQuadrado {
     width: 1000px;
     height: 285px;
     background-color: var(--cor-fundo-sessao);
+    animation: slideLeftToRight 2.5s ease-out;
 }
 
-.decimaPrimeiraSessao__lateralDireita{
+.decimaPrimeiraSessao__lateralDireita {
     width: 410px;
     height: 535px;
 }
 
-.decimaPrimeiraSessao__segundoQuadrado{
-    width: 380px;
+.decimaPrimeiraSessao__segundoQuadrado {
+    width: 400px;
     height: 550px;
     background-color: #d9d9d9;
+    animation: slideDown 2.5s ease-out;
 }
 
-.mapBox{
+.mapBox {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
+    animation: slideLeftToRight 2.5s ease-out;
 }
 
-.mapBox iframe{
+.mapBox iframe {
     width: 540px;
     height: 711px;
     transform: translate(10%, 15%);
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeftToRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

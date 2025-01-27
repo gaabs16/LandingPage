@@ -37,3 +37,34 @@
     margin: 160px 0px 0px 300px;
     position: absolute;
 }
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.oitavaSessao__FundoImagem.animated {
+    animation: slideFromRight 1.5s ease-out forwards;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.oitavaSessao__PrimeiraImagem.animated,
+.oitavaSessao__SegundaImagem.animated {
+    animation: scaleUp 1.5s ease-out forwards;
+}
