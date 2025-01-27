@@ -101,3 +101,21 @@
 .terceiraSessao__SegundaImagem.animate {
     animation: pulse 1.5s ease-out forwards;
 }
+
+@media (max-width: 600px){
+    .terceiraSessao__conteudo{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .terceiraSessao__ConteudoTitulo{
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .terceiraSessao__SegundaImagem{
+        height: 100%;
+    }
+}

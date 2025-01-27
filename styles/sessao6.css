@@ -113,3 +113,26 @@
 .sextaSessao__conteudoSecundarioTexto.animate {
     animation: slideFromBottom 1.5s ease-out forwards;
 }
+
+@media (max-width: 600px) {
+    .sextaSessao__conteudo{
+        width: 100%;
+        height: auto;
+    }
+
+    .sextaSessao__conteudoLayout{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .sextaSessao__Imagem img{
+        width: 100%;
+    }
+
+    .sextaSessao__conteudoSecundario{
+        width: auto;
+        height: auto;
+        margin-bottom: 50px;
+    }
+}

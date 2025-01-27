@@ -64,3 +64,16 @@
 .setimaSessao.animated {
     animation: slideFromTop 1.5s ease-out forwards;
 }
+
+@media (max-width: 600px) {
+    .setimaSessao__conteudo{
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .setimaSessao__botao{
+        width: 30%;
+    }
+}

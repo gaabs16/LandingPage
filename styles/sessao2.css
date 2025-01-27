@@ -103,3 +103,23 @@
 .segundaSessao__link.animate {
     animation: slideUp 1.5s ease-out forwards;
 }
+
+@media (max-width: 600px){
+    .segundaSessao__conteudo{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .segundaSessao__ConteudoTitulo, 
+    .segundaSessao__link{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .segundaSessao__link{
+        align-items: center;
+    }
+}

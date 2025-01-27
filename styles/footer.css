@@ -63,3 +63,47 @@
 .footer__segundoSubtitulo a:hover{
     color: grey;
 }
+
+@media (max-width: 600px) {
+    .footer__container {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__colunas {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer__primeiraColuna,
+    .footer__segundaColuna,
+    .footer__terceiraColuna {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .footer__Titulo {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .footer__Subtitulo {
+        font-size: 14px;
+    }
+
+    .footer__segundaLinha {
+        padding: 10px;
+    }
+
+    .footer__segundoSubtitulo {
+        font-size: 0.8rem;
+    }
+}
