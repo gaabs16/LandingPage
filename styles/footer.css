@@ -64,22 +64,19 @@
     color: grey;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
     .footer__container {
         width: 100%;
-        padding: 10px;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .footer__colunas {
         width: 100%;
+        padding: 20px;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .footer__primeiraColuna,
@@ -97,10 +94,6 @@
 
     .footer__Subtitulo {
         font-size: 14px;
-    }
-
-    .footer__segundaLinha {
-        padding: 10px;
     }
 
     .footer__segundoSubtitulo {

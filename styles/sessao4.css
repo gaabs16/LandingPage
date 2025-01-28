@@ -80,7 +80,7 @@
     animation: slideUp 1.5s ease-out forwards;
 }
 
-@media (max-width: 600px){
+@media (max-width: 300px){
     .quartaSessao__conteudo{
         flex-direction: column-reverse;
         width: 100%;

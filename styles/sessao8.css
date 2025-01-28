@@ -72,21 +72,25 @@
     animation: moveFromRight 1.5s ease-out forwards;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
     .oitavaSessao__conteudo {
         width: 100%;
         height: auto;
     }
 
     .oitavaSessao__Imagens {
-        width: auto;
+        width: 100%;
         height: auto;
         flex-direction: column;
+        margin-top: 300px;
     }
 
     .oitavaSessao__FundoImagem {
-        width: 80%;
-        height: 80%;
-        display: flex;
+        display: none;
+    }
+
+    .oitavaSessao__PrimeiraImagem img, .oitavaSessao__SegundaImagem img{
+        width: 100%;
+        height: auto;
     }
 }

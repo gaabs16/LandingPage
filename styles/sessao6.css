@@ -114,7 +114,7 @@
     animation: slideFromBottom 1.5s ease-out forwards;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
     .sextaSessao__conteudo{
         width: 100%;
         height: auto;
